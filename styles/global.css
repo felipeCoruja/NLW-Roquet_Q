@@ -1,7 +1,7 @@
 *{/*fazendo o reset das configurações iniciais do browser*/
     margin:0;
     padding: 0;
-    border: 0;
+    border: none;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -23,8 +23,8 @@ html{/*criando variáveis para as cores*/
 }
 
 body{
+    display: flex;
     height: 100vh;
-    width: 100vw;
     background:var(--background);
 }
 
@@ -74,11 +74,11 @@ button, .button{
     
 }
 
-button:hover ,.button:hover{
+button:hover, .button:hover{
     filter:brightness(1.2)/*aplica um filtro de luz de valor 1.2 */
 }
 
-button > img
+button > img,
 .button > img{
     margin-right: 1rem;
     width: 2rem;
@@ -93,7 +93,7 @@ button.outlined,
 }
 
 .content header{
-    width:80% ;
+    width: 80% ;
     margin: 3.5rem auto;/*3.5rem em cima e em baixo, auto nas laterais*/
 }
 
