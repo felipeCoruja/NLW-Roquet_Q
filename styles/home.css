@@ -1,0 +1,48 @@
+.content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11.4rem 1fr;/*Significa que a primeira linha tem 11.4rem de altura e o que sobrar divide em uma fração*/
+    grid-template-areas: /*Definindo quais elementos irão ficar em cada quadrante do grid*/
+    'header header'
+    'left right';
+}
+
+header{
+    grid-area: header;
+}
+
+#bg{
+    grid-area: left;
+    background: url('/assets/ilustracao-bg-img.svg') no-repeat top/contain;
+}
+
+main{
+    grid-area: right;
+
+    display: flex;
+    align-items: center;
+
+}
+
+main.container{
+    width: min(36.3rem 100%);
+}
+
+main h2{
+    font-family: 'Poppins', sans-serif;
+    color:var(--black);
+    font-size: 2.8rem;
+    margin-bottom:clamp(20px, 2.8rem,5vw);
+}
+
+
+
+input{
+    border:0.2rem solid var(--grey-blue);
+    padding:0 1.6rem;
+}
+
+input,button, .button{
+    width: 100%;
+    margin-bottom: 1.8rem ;
+}
