@@ -11,6 +11,7 @@ server.use(express.static("public"))//passando a pasta public
 
 server.set('views', path.join(__dirname, 'views'))//passando o caminho da pasta views onde se encontra a index.ejs
 
+server.use(express.urlencoded({extended: true}))
 server.use(route)//usando as rotas definidas em route.js
 server.listen(3000 , () => console.log("RODANDO"))//passando a porta 3000 onde irá rodar o server e uma função simplificada () => console.log() para printar na tela
 
