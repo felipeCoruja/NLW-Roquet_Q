@@ -39,7 +39,7 @@ function handleClick(event, check = true){
     const roomId = document.querySelector("#room-id").dataset.id//pegando o id da sala 
     const form = document.querySelector(".modal form")//pegando o elemento <form>
     const questionId = event.target.dataset.id//pegando o elemento data-id dentro da tag <a> que está dentro de event
-    form.setAttribute("action", `/room/${roomId}/${questionId}/${slug}`)//setando o atributo do elemento <form>
+    form.setAttribute("action", `/question/${roomId}/${questionId}/${slug}`)//setando o atributo do elemento <form>
     
 
     const text= check ? "Marcar como lida" : "Excluir"//se check for true : se check for false
